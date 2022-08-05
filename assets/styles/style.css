@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: hsl(0, 4%, 80%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    object-fit: contain;
+}
+
+img{
+    display: block;
+    width: 15vw;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+span, p{
+    color: grey;
+}
+
+span, h1, p, #price{
+    margin-bottom: 5px;
+    padding-right: 20px;
+}
+
+p{
+    margin-top: 5px;
+    line-height: 1.1;
+}
+
+.card-content{
+    text-align: start;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.main-container{
+    display: flex;
+    width: 35%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btn{
+    padding: 10px 62px;
+    margin-bottom: 5px;
+    color: white;
+    background-color: rgb(1, 60, 1);
+    border-radius: 5px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: rgb(1, 88, 1);
+}
+
+#price{
+    color: rgb(3, 150, 3);
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+@media screen and (max-width: 700px) {
+    .main-container{
+        display: block;
+        width: 70%;
+    }
+
+    header{
+        object-fit: fill;
+    }
+
+    img{
+        width: 100%;
+        height: 50vh;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-content{
+        text-align: start;
+        overflow: hidden;
+    }
+}
